@@ -30,5 +30,9 @@ void main() {
   contagemPorProfissao.forEach((profissao, quantidade) {
     print('$profissao: $quantidade');
   });
+
+  //3:
+  final pacientesEmSP = pacientes.where((paciente) => paciente.split('|')[3] == 'SP').length;
+  print('Quantidade de pacientes que moram em SP: $pacientesEmSP');
   
 }
